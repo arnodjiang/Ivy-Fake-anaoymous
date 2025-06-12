@@ -1,0 +1,6 @@
+json_repair
+evaluate
+sentence-transformers
+openai
+tqdm
+loguru
