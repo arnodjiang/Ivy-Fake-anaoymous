@@ -11,8 +11,8 @@ Due to the double-blind requirement, we will release the dataset and related inf
 ## 🔍 Overview
 
 **IVY-FAKE** is the **first large-scale dataset** designed for **multimodal explainable AIGC detection**. It contains:
-- **150K+** training samples (images + videos)
-- **18.7K** evaluation samples
+- **110K+** training samples (images + videos)
+- **5K** evaluation samples
 - **Fine-grained annotations** including:
   - Spatial and temporal artifact analysis
   - Natural language reasoning (<think>...</think>)
@@ -21,7 +21,7 @@ Due to the double-blind requirement, we will release the dataset and related inf
 **IVY-xDETECTOR** is a vision-language detection model trained to:
 - Identify synthetic artifacts in images and videos
 - Generate **step-by-step reasoning**
-- Achieve **SOTA performance** across multiple benchmarks
+- Achieve **Superior performance** across multiple benchmarks
 
 ---
 
@@ -59,6 +59,15 @@ python eva_scripts.py \
 ```
 
 This script compares model predictions (<conclusion>real/fake</conclusion>) to the ground truth and logs mismatches to error_item.json.
+
+Step2: Print Result
+
+```bash
+python eva_step2_print_result.py \
+  --input_file ./MiniCPM-V-4_5_eva.jsonl \
+  --batch_size 16 \
+  --bert_model ./deberta-xlarge-mnli
+```
 
 ---
 
