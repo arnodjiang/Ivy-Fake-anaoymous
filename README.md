@@ -48,9 +48,11 @@ Before running, export the following environment variables:
 ```bash
 export OPENAI_API_KEY="your-api-key"
 export OPENAI_BASE_URL="https://api.openai.com/v1"  # or OpenAI's default base URL
-```
+```asd
 
-▶️ Run Evaluation
+Step1: Generating Eva Result:
+
+▶️ Run Evaluationasd
 
 ```bash
 python eva_scripts.py \
